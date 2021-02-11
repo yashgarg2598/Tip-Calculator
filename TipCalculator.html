@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+<div id="container">
+  <h1>Tip Calculator</h1>
+  <div id="calculator">
+    <form>
+      <div>
+        <p>Bill </p>
+        <input id="billamt" type="number" min=0 placeholder="Bill Amount" value="0"/>
+      </div>
+
+      <div>
+        <p>Tip %</p>
+        <input id="tipamt" type="number" min="0" max="100" placeholder="Enter amount" id="tip" value="0"/>
+        
+      </div>
+
+      <div>
+        <p>Number of people</p>
+       
+        <input id="peopleamt" type="number"min=0 placeholder="Enter Amount" id="tip" value="0"/>
+       
+      </div>
+      <br>
+      <button type="button" id="calculate" onclick="calculateTip()">Calculate</button>
+    </form>
+  </div>
+  <!--calculator end-->
+  <div id="calculationBox">
+    <p><b>Tip Per Person</b></p>
+    <h4 id="tip">$ 0.00</h4>
+    <p><b>Total Per Person</b></p>
+    <h3 id="total">$ 0.00</h3>
+  </div>
+  <!--totalTip end-->
+
+</div>
+<!--container end-->
+
+<script type="text/javascript" src="TipCalculator.js"></script>
+</body>
+</html>
